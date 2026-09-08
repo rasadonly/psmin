@@ -1,3 +1,3 @@
-import { greet } from '../lib/thing';
-import { dirGreet } from '../lib/dir';
-export default function Home() { return <div>{greet()}:{dirGreet()}</div>; }
+import { generateSpeech } from '../lib/tts';
+const _typeRef: typeof generateSpeech | null = null;
+export default function Home() { return <div>{_typeRef ? "ok" : "no"}</div>; }

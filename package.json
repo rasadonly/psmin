@@ -1,7 +1,25 @@
 {
   "name": "psmin",
   "private": true,
-  "scripts": { "build": "next build" },
-  "dependencies": { "next": "14.2.35", "react": "18.3.1", "react-dom": "18.3.1" },
-  "devDependencies": { "typescript": "5.9.3", "@types/node": "20", "@types/react": "18", "@types/react-dom": "18" }
+  "scripts": {
+    "build": "next build"
+  },
+  "dependencies": {
+    "next": "14.2.35",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "onnxruntime-node": "1.29.0",
+    "phonemizer": "^1.2.1",
+    "onnxruntime-web": "^1.20.1",
+    "@huggingface/transformers": "^4.2.0"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/node": "20",
+    "@types/react": "18",
+    "@types/react-dom": "18"
+  },
+  "overrides": {
+    "onnxruntime-node": "1.29.0"
+  }
 }

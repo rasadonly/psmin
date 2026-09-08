@@ -1,4 +1,4 @@
 import { NextResponse } from 'next/server';
-import { greet } from '@/lib/thing';
-import { dirGreet } from '@/lib/dir';
-export async function GET() { return NextResponse.json({ a: greet(), b: dirGreet() }); }
+import { generateSpeech } from '@/lib/tts';
+const _typeRef: typeof generateSpeech | null = null;
+export async function GET() { return NextResponse.json({ ref: !!_typeRef }); }
